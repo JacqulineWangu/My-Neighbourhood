@@ -2,18 +2,18 @@
 {% block content %}
 <div class="container-fluid ground ">
     <div>
-        <h4 class="text-center heading"> Hood Posts</h4>
+        <h4 style=" margin-top: 40px;" class="text-center heading"> Hood Posts</h4>
     </div>
     <div class="row">
         {% for post in all_posts %}
 
-        <div class="col-md-4 main-page d-flex" style=" margin-top: 5px;">
+        <div class="col-md-4 main-page d-flex" style=" margin-top: 30px;">
             <!-- Card -->
             <!-- Card deck -->
             <div class="card-deck">
 
                 <!-- Card -->
-                <div class="card mb-4">
+                <div class="card mb-4" style=" background-color:woody;">
                     <div class="card-header"><strong>Hood: </strong>{{post.hood_post}}</div>
                     <!--Card image-->
                     <div class="view overlay">
