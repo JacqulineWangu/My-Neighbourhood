@@ -73,9 +73,9 @@ def new_business(request):
             business.business_owner = current_user
             business.save()
         return redirect('home')
-    else:
-        form = BusinessForm()
-    return render(request,"business/business_form.html",{"form":form})
+    # else:
+    #     form = BusinessForm()
+    # return render(request,"business/business_form.html",{"form":form})
 
 @login_required(login_url='/accounts/login/')
 def business(request):
