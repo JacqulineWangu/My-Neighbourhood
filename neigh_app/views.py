@@ -47,9 +47,9 @@ def profile_edit(request):
         if form.is_valid():
             form.save()
         return redirect('profile')
-    else:
-        form = ProfileForm()
-    return render(request,'profile/edit_profile.html',{'form':form})
+    # else:
+    #     form = ProfileForm()
+    # return render(request,'profile/edit_profile.html',{'form':form})
 
 @login_required(login_url='/accounts/login/')
 def profile(request):
