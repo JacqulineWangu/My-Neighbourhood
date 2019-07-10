@@ -22,7 +22,7 @@
         <div class="card" style="padding:30px;">
             <form action="{% url 'edit_profile' %}" method="post" enctype="multipart/form-data">
                 {%csrf_token%}
-                {% bootstrap_form form%}
+                {% bootstrap_form form %}
                 <input type="submit" class="btn btn-success btn-block" value="Edit Info">
             </form>
         </div>
