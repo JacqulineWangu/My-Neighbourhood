@@ -28,12 +28,12 @@
     <div class="row" style="margin-top:30px;">
 
         <!-- Card deck -->
-        <div class="card-deck" style="background-color:wheat;">
+        <div class="card-deck">
             {% if business %}
             {% for single_post in business %}
             <!-- Card -->
             <div class="">
-                <div class="card border-primary mb-3" style="max-width: 40rem;">
+                <div class="card border-primary mb-3"  style="max-width: 40rem; background-color:wheat;">
                     <div class="card-header">Name: {{single_post.business_name}}</div>
                     <div class="card-body">
                         <h5 class="card-title">Email: {{single_post.business_email}}</h5>
@@ -61,7 +61,7 @@
             <div class="card mb-4">
 
                 <!--Card image-->
-                <div class="view overlay">
+                <div class="view overlay" style="background-color:wheat;">
                     <img class="card-img-top" src="{{post.post_picture.url}}" alt="Card image cap">
                     <a href="#!">
                         <div class="mask rgba-white-slight"></div>
