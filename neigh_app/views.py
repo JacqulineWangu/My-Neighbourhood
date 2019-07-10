@@ -34,9 +34,9 @@ def new_profile(request):
             profile.profile_Id = request.user.id
             profile.save()
         return redirect('profile')
-    else:
-        form = ProfileForm()
-    return render(request, 'profile/new_profile.html', {"form": form})
+    # else:
+    #     form = ProfileForm()
+    # return render(request, 'profile/new_profile.html', {"form": form})
 
 @login_required(login_url='/accounts/login/')
 def profile_edit(request):
